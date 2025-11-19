@@ -10,7 +10,11 @@ public class WorldMaster : MonoBehaviour
 
     private void Awake()
     {
-        gridGenerator = GetComponentInParent<WorldMaster>().gridGenerator;
-        colliderSystem = GetComponentInParent<WorldMaster>().colliderSystem;
+        // 移除错误的循环引用初始化
+        // 确保waveFunctionCollapse不为null（如果需要）
+        if (waveFunctionCollapse == null)
+        {
+            Debug.LogWarning("waveFunctionCollapse未在Inspector中设置，请确保正确引用");
+        }
     }
 }

@@ -45,17 +45,17 @@ public class GridGenerator : MonoBehaviour
 
     private void Update()
     {
-        foreach (var vertex in grid.vertexYList)
-        {
-            if(Vector3.Distance(testCube.transform.position,vertex.currentPosition)<2f && !vertex.isBoundary)
-            {
-                vertex.SetVertexStatus(true);
-            }
-            if(Vector3.Distance(testDeleteCube.transform.position, vertex.currentPosition) <2f)
-            {
-                vertex.SetVertexStatus(false);
-            }
-        }
+        //foreach (var vertex in grid.vertexYList)
+        // {
+        //     if(Vector3.Distance(testCube.transform.position,vertex.currentPosition)<2f && !vertex.isBoundary)
+        //     {
+        //         vertex.SetVertexStatus(true);
+        //     }
+        //     if(Vector3.Distance(testDeleteCube.transform.position, vertex.currentPosition) <2f)
+        //     {
+        //         vertex.SetVertexStatus(false);
+        //     }
+        // }
         
         foreach (SubQuad subQuad in grid.subquads)
         {
