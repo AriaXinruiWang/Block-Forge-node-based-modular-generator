@@ -122,7 +122,7 @@ public class Clicker : MonoBehaviour
             Debug.unityLogger.Log(raycastHit.transform.name);
             if(raycastHit.transform.GetComponent<SlotCollider_Top>())
             {
-               if( y < Grid.height-1)
+               if( y < Grid.height-2)
                {
                   vertex_Y_Target = vertex_Y_pre_Selected.vertex.vertex_Ys[y + 1];
                   raycastHitType = RaycastHitType.top;

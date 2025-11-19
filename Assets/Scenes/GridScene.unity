@@ -681,7 +681,7 @@ MonoBehaviour:
   radius: 4
   cellSize: 2
   cellHeight: 2
-  height: 3
+  height: 7
   smoothTime: 10
   addSphere: {fileID: 0}
   deleteSphere: {fileID: 0}
@@ -722,7 +722,7 @@ MonoBehaviour:
   raycastRange: 1000
   clickLayerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   cursor: {fileID: 371700670}
 --- !u!4 &1783399689
 Transform:
